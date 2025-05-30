@@ -1,0 +1,237 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+.headerimg{
+  background-image: url(header-bg.jpg.webp);
+  height: 660px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar img{
+  height: 30px;
+  width: 120px;
+  margin-left: 170px;
+  margin-top: 30px;
+}
+.menu{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 170px;
+  margin-top: 30px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.menu a:hover{
+  cursor: pointer;
+}
+.menu span{
+  color: white;
+  font-size: 8px;
+  position: relative;
+  right: 15px;
+  bottom: 1px;
+}
+.content{
+  margin-left: 170px;
+  margin-top: 20px;
+}
+.content h5{
+  color: white;
+  text-transform: uppercase;
+}
+.content h1{
+  color: white;
+  font-size: 60px;
+  margin-top: 15px;
+}
+.content button{
+  height: 33px;
+  width: 130px;
+  margin-top: 20px;
+  font-size: 13px;
+  border: none;
+  border-radius: 30px;
+  transition-duration: 0.5s;
+}
+.content button:hover{
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+.mainbox{
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+} 
+.box1{
+  /* border: 1px solid black; */
+  width: 40%;
+  height: 360px;
+  background-image: url(video-bg.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+}
+.box1 img{
+  position: relative;
+  left: 45%;
+  top: 45%;
+  
+}
+.box2{
+  /* border: 1px solid black; */
+  width: 40%;
+  height: 320px;
+}
+.images{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 70px;
+}
+.images2{
+  display: flex;
+  gap: 25px;
+  /* justify-content: center; */
+  margin-left: 230px;
+  margin-top: 30px;
+}
+.footer{
+  background-image: url(footer-bg.jpg.webp);
+  height: 570px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footerboxes{
+  display: flex;
+  justify-content: space-evenly;
+}
+.box_1{
+  /* border: 1px solid white; */
+  width: 32%;
+  height: 300px;
+  margin-top: 220px;
+}
+.box_2{
+  /* border: 1px solid white; */
+  width: 28%;
+  height: 300px;
+  margin-top: 220px;
+}
+.box_3{
+  /* border: 1px solid white; */
+  width: 12%;
+  height: 300px;  
+  margin-top:220px;
+}
+.box_2 input{
+  margin-top: 27px;
+  height: 50px;
+  width: 350px;
+}
+.box_2 input::placeholder{
+  padding-left: 20px;
+  font-size: 15px;
+  color: #777777;
+}
+.box_2 i{
+  font-size: 20px;
+  color: white;
+  border: 1px solid wheat;
+  height: 50px;
+  width: 50px; 
+  position: relative;
+  top: 2px;
+  padding: 15px;
+  background-color: #b68834;
+  border: none;
+}
+.box_3 i{
+  color: white;
+  margin-top: 25px;
+  margin-left: 30px;
+}
