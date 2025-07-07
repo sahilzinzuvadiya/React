@@ -1,41 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
-import Navbar from './Navbar'
-import Slider from './Slider'
-import Wear from './Wear'
-import Season from './Season'
-import Tranding from './Tranding'
-import Trendi from './Trendi'
-import Seller from './Seller'
-import Wrogn from './Wrogn'
-import Wallpaper from './Wallpaper'
-import WrognStore from './WrognStore'
-import Footer from './Footer'
-import SignIn from './SignIn'
-import SignUp from './SignUp'
+import Navbar from './Components/Navbar';
+import Slider from './Components/Slider';
+import Wear from './Components/Wear';
+import Season from './Components/Season';
+import Tranding from './Components/Tranding';
+import Trendi from './Components/Trendi';
+import Seller from './Components/Seller';
+import Wrogn from './Components/Wrogn';
+import Wallpaper from './Components/Wallpaper';
+import WrognStore from './Components/WrognStore';
+import Footer from './Components/Footer';
+import { Route, Routes, useNavigate } from 'react-router-dom'
+import SignIn from './RouterUsingForm/SignIn'
+import SignUp from './RouterUsingForm/SignUp'
+import React from 'react'
 
-function App() {
-  // const [count, setCount] = useState(0)
+export function HomePage() {
+  const navigate = useNavigate()
+  useEffect(() => {
+    let getdata = JSON.parse(localStorage.getItem("auth"))
+    if (getdata == false) {
+      navigate("/signin")
+    }
+  }, [])
+  return (
+    <div>
+      <Navbar />
+      <Slider />
+      <Wear />
+      <Season />
+      <Tranding />
+      <Trendi />
+      <Seller />
+      <Wrogn />
+      <Wallpaper />
+      <WrognStore />
+      <Footer />
+    </div>
+  );
+}
+
+export default function App() {
 
   return (
     <div>
-      <Navbar></Navbar>
-      <Slider></Slider>
-      <Wear></Wear>
-      <Season></Season>
-      <Tranding></Tranding>
-      <Trendi></Trendi>
-      <Seller></Seller>
-      <Wrogn></Wrogn>
-      <Wallpaper></Wallpaper>
-      <WrognStore></WrognStore>
-      <Footer></Footer>
-      <SignIn></SignIn>
-      <SignUp></SignUp>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
     </div>
-  )
+  );
 }
-
-export default App

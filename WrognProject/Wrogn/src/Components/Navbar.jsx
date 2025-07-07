@@ -1,11 +1,21 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
+  const navigate=useNavigate()
+  const handleclick=()=>{
+      navigate("/signin")
+  }
   return (
     <div>
       <div className='fixed top-0 left-0 z-50 bg-black w-[100%] h-[30px]'>
          <div className='marquee'>
             <span className='text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
+            <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
+            <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
+            <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
+            <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
+            <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
             <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
             <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
             <span className='ml-10 text-white text-[13px] font-semibold'>END OF SEASON SALE- UPTO 50% OFF</span>
@@ -22,11 +32,13 @@ export default function Navbar() {
         
       
       {/* navbar */}
+      
       <div className='fixed top-[28px] w-full h-[70px] flex justify-between bg-white shadow-md z-50'>
-        <div className='ml-[50px] '>
-          <img className='w-[45px] mt-4 hover:cursor-pointer' src='logo.svg' alt=''></img>
+          <span className='hidden'><i class="fa-solid fa-bars mt-8 text-2xl"></i></span>
+        <div className='ml-[50px] flex gap-6'>
+          <img className='w-[45px] mt-1 hover:cursor-pointer' src='logo.svg' alt=''></img>
         </div>
-        <div className='flex gap-8 text-[14px] font-bold justify-center items-center ml-8'>
+        <div className='flex gap-8 text-[14px] font-bold justify-center items-center ml-8 '>
           <a href='#'>EOSS</a>
           <a href='#'>EXCLUSIVE</a>
           <div className='group z-50 h-[70px] flex items-center'>
@@ -185,13 +197,13 @@ export default function Navbar() {
         <div className='flex gap-6 text-[22px] ml-7 mt-5 mr-[50px]'>
           <div className='group z-50 h-[50px]'>
           <i class="fa-regular fa-user hover:cursor-pointer"></i>
-            <div className='bg-white absolute top-[71px] left-[78%] w-[250px] h-[330px] p-8 rounded-3xl hidden group-hover:block'>
+            <div className='bg-white absolute top-[71px] left-[78%] w-[250px] h-[250px] p-8 rounded-3xl hidden group-hover:block'>
                 <p className='text-[14px] text-gray-400'>PROFILE</p>
-                <p className='flex text-[15px]'><i class="fa-regular fa-user mt-4"></i><p className='ml-3 mt-3 font-semibold text-[14px] hover:text-[#934c93]'>ACCOUNT</p></p>
-                <p className='flex text-[15px]'><i class="fa-solid fa-bag-shopping mt-5"></i><p className='ml-3 mt-3 font-semibold text-[14px] hover:text-[#934c93]'>ORDERS</p></p>
-                <p className='flex text-[15px]'><i class="fa-solid fa-store mt-5"></i><p className='mt-3 ml-3 font-semibold text-[14px] hover:text-[#934c93]'>FIND STORES</p></p>
-                <button className='text-[16px] mt-6 border-2 border-black w-full h-[45px] rounded-2xl font-semibold hover:cursor-pointer'>SIGN IN</button><br></br>
-                <button className='text-[16px] mt-4 border-2 border-black w-full h-[45px] rounded-2xl font-semibold hover:cursor-pointer'>SIGN UP</button>
+                <p className='flex text-[15px]'><i class="fa-regular fa-user mt-4"></i><span className='ml-3 mt-3 font-semibold text-[14px] hover:text-[#934c93]'>ACCOUNT</span></p>
+                <p className='flex text-[15px]'><i class="fa-solid fa-bag-shopping mt-5"></i><span className='ml-3 mt-3 font-semibold text-[14px] hover:text-[#934c93]'>ORDERS</span></p>
+                <p className='flex text-[15px]'><i class="fa-solid fa-store mt-5"></i><span className='mt-3 ml-3 font-semibold text-[14px] hover:text-[#934c93]'>FIND STORES</span></p>
+                <button onClick={handleclick} className='text-[16px] mt-6 border-2 border-black w-full h-[45px] rounded-2xl font-semibold hover:cursor-pointer'>LOGIN</button><br></br>
+                
             </div>
           </div>
           <i class="fa-solid fa-bag-shopping mt-1 hover:cursor-pointer"></i>

@@ -19,25 +19,25 @@ export default function Footer() {
                 </div>
                 <div className='w-[18%] h-[300px] mt-20'>
                     <h6 className='text-white font-semibold'>HELP</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[80px] border-white hover:text-white'>My Account</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[87px] border-white hover:text-white'>Privacy Policy</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[142px] border-white hover:text-white'>Anti Corruption Policy</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[125px] border-white hover:text-white'>Terms & Conditions</h6>    
-                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[70px] border-white hover:text-white'>Contact Us</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[90px] border-white hover:text-white    '>My Account</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[100px] border-white hover:text-white'>Privacy Policy</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[162px] border-white hover:text-white'>Anti Corruption Policy</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[145px] border-white hover:text-white'>Terms & Conditions</h6>    
+                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[80px] border-white hover:text-white'>Contact Us</h6>
                 </div>
                 <div className='w-[18%] h-[300px] mt-20'>
                     <h6 className='text-white font-semibold'>ORDER SUPPORT</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[150px] border-white hover:text-white'>Return & Refund Policy</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[170px] border-white hover:text-white'>Return & Refund Policy</h6>
                     <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[30px] border-white hover:text-white'>FAQ</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[100px] border-white hover:text-white'>Shipping Policy</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[80px] border-white hover:text-white'>Cancellation</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[115px] border-white hover:text-white'>Shipping Policy</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-5 hover:border-b-1 w-[90px] border-white hover:text-white'>Cancellation</h6>
                 </div>
                 <div className='w-[18%] h-[300px] mt-20'>
                     <h6 className='text-white font-semibold'>ABOUT US</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[60px] border-white hover:text-white'>About Us</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[80px] border-white hover:text-white'>Find a Store</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[30px] border-white hover:text-white'>Blog</h6>
-                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[50px] border-white hover:text-white'>Careers</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[70px] border-white hover:text-white'>About Us</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[90px] border-white hover:text-white'>Find a Store</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[32px] border-white hover:text-white'>Blog</h6>
+                    <h6 className='text-[#A5A8AC] font-semibold mt-6 hover:border-b-1 w-[55px] border-white hover:text-white'>Careers</h6>
 
                 </div>
             </div>
