@@ -12,6 +12,8 @@ export const TodoSlice=createSlice({
             state.data=datafilter
         },
         updateData:(state,action)=>{
+            
+            
             state.data.map((e,i)=>{
                 if(e.id==action.payload.id){
                     e.name=action.payload.name,
