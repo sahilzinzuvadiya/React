@@ -5,12 +5,12 @@ import { doc, setDoc } from 'firebase/firestore'
 import { Link, useNavigate } from 'react-router-dom'
 import { Eye, EyeOff } from 'lucide-react'
 
-export default function SignUp({theme}) {
+export default function SignUp({ theme }) {
   const [email, setEmail] = useState("")
   const [password, setPasssword] = useState("")
   const [name, setName] = useState("")
   const [age, setAge] = useState("")
-  const [showPassword,setshowPassword]=useState()
+  const [showPassword, setshowPassword] = useState()
   const navigate = useNavigate()
 
   const handleSignUp = async () => {
@@ -23,20 +23,27 @@ export default function SignUp({theme}) {
     }
   }
 
+  const GoogleAuth = async () => {
+      await signInWithPopup(auth, provider).then((res) => {
+        console.log(res);
+  
+      })
+    }
+
   return (
-    <div className={theme === 'light' 
-  ? "h-144 pt-2 flex items-center justify-center bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 px-4"
-  : "h-144 pt-2 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-4"
-}>
+    <div className={theme === 'light'
+      ? "h-154 pt-2 flex items-center justify-center bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 px-4"
+      : "h-154 pt-2 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-4"
+    }>
 
       {/* <div className="w-full max-w-md bg-white shadow-xl rounded-2xl p-8 backdrop-blur-md animate-fade-in"> */}
       <div
-  className={
-    theme === 'light'
-      ? "w-full h-135 max-w-md bg-white shadow-xl rounded-2xl p-8 backdrop-blur-md animate-fade-in transition-all duration-500"
-      : "w-full h-135 max-w-md bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white border border-gray-700 shadow-xl rounded-2xl p-8 backdrop-blur-md animate-fade-in transition-all duration-500"
-  }
->
+        className={
+          theme === 'light'
+            ? "w-full h-148 max-w-md bg-white shadow-xl rounded-2xl p-8 backdrop-blur-md animate-fade-in transition-all duration-500"
+            : "w-full h-148 max-w-md bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white border border-gray-700 shadow-xl rounded-2xl p-8 backdrop-blur-md animate-fade-in transition-all duration-500"
+        }
+      >
 
         <h2 className="text-3xl font-bold text-center text-indigo-700 mb-4">Create Account</h2>
 
@@ -97,7 +104,7 @@ export default function SignUp({theme}) {
         {/* Password */}
         <div className="relative mb-8">
           <input
-            type={showPassword?"text":"password"}
+            type={showPassword ? "text" : "password"}
             id="password"
             value={password}
             onChange={(e) => setPasssword(e.target.value)}
@@ -112,7 +119,7 @@ export default function SignUp({theme}) {
           </label>
           <button
             type="button"
-            onClick={() => setshowPassword(prev=>!prev)}
+            onClick={() => setshowPassword(prev => !prev)}
             className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-800"
           >
             {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
@@ -125,6 +132,19 @@ export default function SignUp({theme}) {
         >
           Sign Up
         </button>
+
+        <button
+          onClick={GoogleAuth}
+          className="w-full mt-4 flex items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300"
+        >
+          <img
+            src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+            alt="Google"
+            className="w-5 h-5"
+          />
+          <span className="font-medium">Sign in with Google</span>
+        </button>
+
 
         <p className="text-sm text-center text-gray-600 mt-6">
           Already have an account?{" "}
