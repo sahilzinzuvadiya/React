@@ -1,6 +1,6 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import React, { useState } from 'react'
-import { auth, db } from '../../FirebaseConfige'
+import { auth, db, provider } from '../../FirebaseConfige'
 import { doc, setDoc } from 'firebase/firestore'
 import { Link, useNavigate } from 'react-router-dom'
 import { Eye, EyeOff } from 'lucide-react'

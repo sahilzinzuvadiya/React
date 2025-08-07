@@ -1,7 +1,7 @@
-import { signInWithEmailAndPassword } from 'firebase/auth'
+import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { auth } from '../../FirebaseConfige'
+import { auth, provider } from '../../FirebaseConfige'
 import { Eye, EyeOff } from 'lucide-react'
 
 export default function Login({ theme }) {
