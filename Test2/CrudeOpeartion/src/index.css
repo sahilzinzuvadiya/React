@@ -1,0 +1,78 @@
+/* Container */
+div {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fafafa;  /* soft background */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* clean single shadow */
+  transition: transform 0.3s ease;
+}
+div:hover {
+  transform: translateY(-2px); /* small lift effect */
+}
+
+/* Input */
+input[type="text"] {
+  width: 95%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="text"]:focus {
+  border-color: #6c63ff;  /* nice purple highlight */
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.4);
+  outline: none;
+}
+
+/* Button */
+button {
+  padding: 8px 16px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;    /* modern purple */
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background: #5148d4;    /* darker on hover */
+  transform: scale(1.05); /* little zoom */
+}
+
+/* List */
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  list-style: none;
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeSlideIn 0.4s ease forwards;
+}
+ul li {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Fade + Slide Animation */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
